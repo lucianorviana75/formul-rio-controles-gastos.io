@@ -1,5 +1,5 @@
 body{
-    background-color: green;
+    background-color: rgb(61, 126, 61);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,27 +17,30 @@ input, button{
     width: -webkit-fill-available;
 }
 button{
-    cursor: pointer;
+    cursor: progress;
     
 }
 button:active{
-    opacity: 0.8;
+    opacity: 0.10;
 }  
 button[disabled]{
-    opacity: 0.7;
+    opacity: 0.10;
 }  
 .clear{
-    background-color: transparent;
-    border: none;
-    color: white;
+    background-color:blue;
+    color:white;
+    border: 1px solid white;
+   
 }
 .solid{
-    background-color: white;
-    border: none;
-    color: green;
-}
-.outline{
-    background-color: transparent;
+    background-color:green;
     color: white;
     border: 1px solid white;
+    
 }
+.outline{
+    background-color: brown;
+    color:white;
+    border: 1px solid white;
+}
+

@@ -1,0 +1,48 @@
+validação de formulario;
+Documento focado no javaScript
+
+No html
+ <input type="email" name="email" id="email onchange="validateField()"  placeholder="seunome@email.com">
+onchange = executa um codigo javaescript toda vez que o campo for modificado.
+função = validateFields()
+onchange="validateField()"
+Nos Campos criados temos que criar um id para que o javaScript encontre os conteudos requisitados.Cada campo tem seu id .
+------------------------------------------------------------------------------------------------------------------
+ No javaScrpt
+//pegar o valor do campo de email.
+//verificar se o email não é vazio e se o email é validação
+//se verdadeiro habilitar o botão de recuperar senha
+//se falso, então desabilitar o botão de recuperar senha
+
+function validateField(){
+  const email = document.getElementById("email").value //preciso pegar apartir do documento o id do elemento email e o que eu quero é o valor dele.
+  se o campo do email estiver vazio...
+
+  if(!email){//(!email) siguinifica email vazio.
+
+    preciso pegar o botão de recuperar senha e fazer com que ele fique desabilitado.
+    document.getElementById("recover-password-botton").disable = true;
+  }else if (validateEmail(email)){
+  
+    Se existe um valor dentro do campo de email vou verificar este valor.
+  
+      document.getElementById("recover-password-button").disabled = false;
+  }else{
+    se o email no campo não for valido ele cai neste comando.
+      document.getElementById("recover-password-button").disabled = true;
+
+  }
+}
+function isEmailValid() {
+  Se o email é vazio vou retornar falso.
+    const email = document.getElementById("email").value;
+    if (!email) {
+        return false;
+    }
+} 
+function validateEmail(email) {
+  return /\S+@\S+\.\S+/.test(email);
+}
+ 
+document = É uma variavel que contem todas as minhas pastas.
+getElementById = Pegar um elemento por id ,para pegar este elemento preciso que o campo do html tenha um id.

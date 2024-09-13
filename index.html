@@ -8,27 +8,28 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <form action="" method="POST">
+    <form>
 
         <div>
             <div> <label>email</label></div>
-            <input type="email" name="email" id="email" onchange="validateField()" placeholder="seunome@email.com">
+            <input type="email" name="email" id="email" onchange="validateFields()"  placeholder="seunome@email.com">
+           
         </div>
         <div>
             <div> <label>senha</label></div>
-            <input type="password" name="password" id="password"
-            onchange="validateFields()" placeholder="senha">
+            <input type="password" name="password" id="password" placeholder="senha">
+            
         </div>
         <div>
             <button type="button" class="clear" id="recover-password-button" disabled="true">Recuperar senha</button>
         </div>
 
         <div>
-            <button type="button" class="solid" id="login-button" disabled="true">Entrar</button>
+            <button type="button" class="solid" disabled="true" >Entrar</button>
         </div>
  
         <div>
-            <button type="button" class="outline" disabled="true">Registrar</button>
+            <button type="button" class="outline" >Registrar</button>
         </div>
 
 

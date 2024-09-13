@@ -18,7 +18,7 @@ function validateField(){
   const emailValid = isEmailValid();
     document.getElementById("recover-password-button").disabled = !emailValid;
     
-
+Ao colocar o comando acima posso eliminar desde o const email até o else.que ainda sim vai funcionar.
 
 
   const email = document.getElementById("email").value //preciso pegar apartir do documento o id do elemento email e o que eu quero é o valor dele.
@@ -46,6 +46,10 @@ function isEmailValid() {
         return false;
     }
 } 
+função criada para retorno se é falso ou verdadeiro para a validade da senha.
+function isPasswordValid() {
+    
+}
 function validateEmail(email) {
   return /\S+@\S+\.\S+/.test(email);
 }

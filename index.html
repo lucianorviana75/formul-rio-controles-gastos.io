@@ -12,12 +12,15 @@
 
         <div>
             <div> <label>email</label></div>
-            <input type="email" name="email" id="email" onchange="validateFields()"  placeholder="seunome@email.com">
+            <input type="email" name="email" id="email" onchange="onChangeEmail()"  placeholder="seunome@email.com">
+            <div class="error" id="email-required-error">Email obrigatório</div>
+            <div class="error" id="email-invalid-error">Email inválido</div>
            
         </div>
         <div>
             <div> <label>senha</label></div>
-            <input type="password" name="password" id="password" onchange="validateFields()" placeholder="senha">
+            <input type="password" name="password" id="password" onchange="onChangePassword()" placeholder="senha">
+            <div class="error" id="password-required-erro">Senha obrigatória</div>
             
         </div>
         <div>

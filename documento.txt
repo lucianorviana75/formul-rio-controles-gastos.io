@@ -47,9 +47,14 @@ function isEmailValid() {
     }
 } 
 função criada para retorno se é falso ou verdadeiro para a validade da senha.
-function isPasswordValid() {
-    
-}
+function isPasswordValid(){
+    const password = document.getElementById("password").value;
+    if (!password) {
+        return false;
+    }
+    return true;
+}    
+
 function validateEmail(email) {
   return /\S+@\S+\.\S+/.test(email);
 }

@@ -15,6 +15,12 @@ Nos Campos criados temos que criar um id para que o javaScript encontre os conte
 //se falso, então desabilitar o botão de recuperar senha
 
 function validateField(){
+  const emailValid = isEmailValid();
+    document.getElementById("recover-password-button").disabled = !emailValid;
+    
+
+
+
   const email = document.getElementById("email").value //preciso pegar apartir do documento o id do elemento email e o que eu quero é o valor dele.
   se o campo do email estiver vazio...
 

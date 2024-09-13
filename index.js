@@ -1,18 +1,7 @@
 // campo email
 function validateFields() {
-    const email = document.getElementById("email").value;
-    if (!email) {
-        document.getElementById("recover-password-button").disabled = true;
-    }
-    else if (validateEmail(email)) {
-        document.getElementById("recover-password-button").disabled = false;
-    }
-    else {
-        document.getElementById("recover-password-button").disabled = true;
-    }
-
-        
-    
+    const emailValid = isEmailValid();
+    document.getElementById("recover-password-button").disabled = !emailValid;
 }
 function isEmailValid() {
     const email = document.getElementById("email").value;
